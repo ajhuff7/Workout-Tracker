@@ -1,57 +1,67 @@
-# Unit 17 Nosql Homework: Workout Tracker
+# Workout Tracker
 
-For this assignment, you'll create a workout tracker. You have already been provided with the front end code in the `Develop` folder. This assignment will require you to create Mongo database with a Mongoose schema and handle routes with Express.
+ ![workout1](public/assets/workout1.PNG)
 
-## User Story
+This Workout Tracker allows you to document your exercise routines and provides graph data with record of your progress. It utilizes api routes to saved your personalized workouts from your browser and stores your stats in a Mongo database to access upon demand.
 
-* As a user, I want to be able to view create and track daily workouts. I want to be able to log multiple exercises in a workout on a given day. I should also be able to track the name, type, weight, sets, reps, and duration of exercise. If the exercise is a cardio exercise, I should be able to track my distance traveled.
+## Table of Contents
 
-## Business Context
+* [Tech Used](#tech_used)
+* [Usage](#usage)
+* [Features](#features)
+* [Deployed_Link](#deployed_link)
+* [Author](#author)
+* [License](#license)
 
-A consumer will reach their fitness goals more quickly when they track their workout progress.
+----
 
-## Acceptance Criteria
+## Tech Used
 
-When the user loads the page, they should be given the option to create a new workout or continue with their last workout.
+* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+* [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+* [MongoDB](https://www.mongodb.com/)
+* [NPM](https://www.npmjs.com/)
+* [Express](https://expressjs.com/)
+* [nodeJS](https://nodejs.org/en/)
+* [Mongoose](https://mongoosejs.com/docs/)
+* [Morgan](https://www.npmjs.com/package/morgan)
 
-The user should be able to:
+## Usage
+ 
+ Users are prompted to select an exercise type, then enter exercise name and perimeters. Users can choose to add additional exercises or complete their workout. Upon completion, workouts are submitted to the fitness dashboard, which users can access to view their metrics.
 
-  * Add exercises to a previous workout plan.
+  ![workout2](public/assets/workout2.gif)
 
-  * Add new exercises to a new workout plan.
+## Features
 
-  * View the combined weight of multiple exercises on the `stats` page.
+- Utilizes Mongoose to set the format of the database. 
 
-To deploy an application with a MongoDB database to Heroku, you'll need to set up a MongoDB Atlas account and connect a database from there to your application. Be sure to use the following guides for support:
+  ![workout4](public/assets/workout4.PNG)
 
-  * [Set Up MongoDB Atlas](../04-Important/MongoAtlas-Setup.md)
+- Express manages the api routes to GET and POST data to and from the database...
 
-  * [Deploy with Heroku and MongoDB Atlas](../04-Important/MongoAtlas-Deploy.md)
+  ![workout5](public/assets/workout5.PNG)
 
-## Commit Early and Often
+- ... and return that data to the browser.
 
-One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for the following two reasons:
+  ![workout3](public/assets/workout3.gif)
 
-1. Your commit history is a signal to employers that you are actively working on projects and learning new skills.
+## Deployed Link
 
-2. Your commit history allows you to revert your codebase in the event that you need to return to a previous state.
+* [See Live Site](https://stark-mesa-37630.herokuapp.com/)
 
-Follow these guidelines for committing:
+---
 
-* Make single-purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits.
+## Author
 
-* Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history.
+**AJ Huff** 
 
-* Don't commit half-done work, for the sake of your collaborators (and your future self!).
+- [Portfolio Site](https://stark-mesa-37630.herokuapp.com/)
+- [Github](https://github.com/ajhuff7)
+- [LinkedIn](https://www.linkedin.com/in/aj-huff-7696b14b/)
 
-* Test your application before you commit to ensure functionality at every step in the development process.
 
-We want you to have well over 200 commits by graduation, so commit early and often!
 
-## Submission on BCS
+## License
 
-You are required to submit the following:
-
-* The URL to the deployed application
-
-* The URL to the GitHub repository
+![License](https://img.shields.io/badge/License-MIT-brightgreen) 
